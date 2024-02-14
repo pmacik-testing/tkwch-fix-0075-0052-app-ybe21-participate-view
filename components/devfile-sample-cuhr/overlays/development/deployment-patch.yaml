@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-cuhr
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0052-tenant/tkwch-fix-0075-0052-app/devfile-sample-cuhr@sha256:d91f2e2f63d28febc01699e4811bf2f057a21337085f71408c0136527212cf9b
+        name: my-nodejs
+        resources: {}
+status: {}
